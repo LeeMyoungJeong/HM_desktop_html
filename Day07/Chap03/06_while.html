@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while 문</title>
+    <script>
+
+        let num = prompt('반복 횟수를 입력해주세요')
+        num = Number(num)
+
+        // num : 5
+        // 조건 - num : 5,4,3,2,1
+        while (num > 0) {
+            // documetn.write() : 페이지에 html요소를 출력해주는 함수
+            document.write('<h3>' + num + '</h3>')
+            // h3가 블록 요소라서 세로로 나오는데
+            // h3를 span으로 바꿔주면 가로로 출력 가능하다. 
+            // document.writeln() : 페이지에 html 요솔르 출력 후 줄바꿈하는 함수
+                num--
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

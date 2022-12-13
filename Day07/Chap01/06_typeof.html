@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typeof</title>
+    <script>
+
+        console.log(typeof " 김휴먼");       // string
+        console.log(typeof 10.45);          // 8바이트 숫자형 - number
+        console.log(typeof true);           // boolean
+        console.log(typeof null);  // 자바에서 참조타입의 값이 없다면 null을 반환했음
+                                    // null은 값이 존재하지 않는 것
+        console.log(typeof undefined);  // undefined와는 조금 다르다.
+                                        // undefined는 값이 있긴 하나 정의되지 않은 값임을 의미한다.
+        // 자바스크립트에서는 함수도 자료형으로 취급함
+        console.log( typeof function() {} )  
+         // 함수도 변수처럼 전달인자로 넣어서 매개변수로 넘길 수 있다.
+         // 여기 오타가 functon으로 있었더니 아무 값도 콘솔에 출력되지 않았다
+         // 오타 항상 조심해라 ㅇㅋㅇㅋ??
+        console.log( typeof new Date())
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

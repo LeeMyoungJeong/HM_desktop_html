@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../Day01"
+		},
+		{
+			"path": "../../Day02"
+		},
+		{
+			"path": "../../Day06"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../zz사이트 만들기 해보자"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Day07"
+	}
+}

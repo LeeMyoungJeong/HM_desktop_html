@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        /// 노콜백
+        function repeatNocallback(num) {
+            for(let i = 0 ; i < num; i++) {
+                print("hello world");
+            }
+        }
+        function print(string) {
+            console.log(string);
+        }
+        repeatNocallback(5);
+
+        // 콜백
+
+        function repeatYesCallback(num, callback) {
+            for (let i = 0; i < num; i++) {
+                callback("hello world");
+            }
+        }
+        function print(string) {
+            console.log(string);
+        }
+        repeatYesCallback(5, print);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
