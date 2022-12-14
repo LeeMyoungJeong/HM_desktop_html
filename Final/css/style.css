@@ -1,0 +1,175 @@
+:root {
+
+    --main-color: rgb(75, 200, 250);
+
+}
+/* 전체에 대해 사용하지 않을 속성들 지우고 가겠다. */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 14px;
+    overflow-x: hidden;
+    /* 가로로 퍼지는 스크롤을 없애주는 기능 */
+    scroll-behavior : smooth; /* 스크롤 움직임을 부드럽게 해줌 */
+     
+}
+
+body {
+    background-color: aquamarine;
+    padding-left: 35rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem 5%;
+
+}
+
+
+header {
+    position: fixed;
+    top: 0; left: 0 ; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 25rem;
+    padding: 6rem 1rem;
+    text-align: center;
+    background-color: rgb(94, 92, 92);
+}
+
+header .logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+header .logo span {
+    color : var(--main-color);
+}
+header .navbar {}
+header .navbar a{
+    display: block;
+    color: white;
+    margin: 1rem 0;
+    font-size: 1,5rem;
+
+}
+header .navbar a:hover{
+    color: var(--main-color)
+}
+
+header .sns a{
+    color : white;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+header .sns a:hover{
+    color: var(--main-color);
+}
+/* profile */
+.profile{
+    display : flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.profile .img{
+    flex: 1 1 20rem;
+}
+.profile .img img{
+    width: 100%;
+    max-width: 320px;
+}
+.profile .content{
+    flex: 1 1 30rem;
+}
+.profile .content .intro{
+    font-size: 2rem;
+    color: var(--main-color);
+
+}
+.profile .content h3 {
+    font-size: 4rem;
+    color: black;
+
+}
+
+.profile .content h3 span {
+    color: var(--main-color);
+
+}
+.profile .content .info {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.profile .content .text {
+    font-size: 1.2rem;
+    color: gray;
+
+}
+.btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem ;
+    border-radius: 40px;
+}
+
+.btn:hover {
+    background-color: royalblue ;
+
+}
+
+/* 슬라이드 */
+.slide-container {
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+}
+
+
+
+.slide-container .slide {
+    width: 100%;
+    height: 480px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+
+
+.slide img { 
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.slide-nav {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+}
+
+
+.slide-nav .slide {
+    width: auto;
+    height: 180px;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+
+.slide-nav .slide:not(.slick-current) {
+    filter: brightness(20%);
+}
